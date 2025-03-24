@@ -76,6 +76,8 @@ MacOS에서만 사용이 가능한 로컬 Kubernetes 클러스터 관리 도구�
 
 ### Config file example
 
+> **⚠️ 해당 프로젝트에는 기본 클러스터 정의가 포함되어있습니다.(`cluster-config.json`) 해당 파일은 아래 설명과 관련없음을 주의해주시기 바랍니다.**
+
 ```json
 {
   "k3s_version": "v1.26.6+k3s1",
