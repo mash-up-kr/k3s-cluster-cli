@@ -159,3 +159,13 @@ kubectl config use-context k3s-<master node name>
 ```
 
 `destroy` 명령어로 클러스터 삭제시 `init` 과정에서 생성된 context도 모두 삭제됩니다.
+
+## Running Example
+
+<div style="display:flex">
+  <img src="img/a.png" alt="a" width="300"/>
+</div>
+
+<div style="display:flex">
+  <img src="img/b.png" alt="b" />
+</div>
