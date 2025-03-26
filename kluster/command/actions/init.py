@@ -391,13 +391,13 @@ def run(args):
         setup_success = False
         if len(master_nodes) == 1:
             setup_success = setup_single_master_cluster(
-                connection, cursor, master_nodes, worker_nodes
+                connection, cursor, master_nodes, worker_nodes, kubernetes_version
             )
             if not setup_success:
                 logger.error("❌Failed to setup single master cluster")
         else:
             setup_success = setup_ha_master_cluster(
-                connection, cursor, master_nodes, worker_nodes
+                connection, cursor, master_nodes, worker_nodes, kubernetes_version
             )
             if not setup_success:
                 logger.error("❌Failed to setup HA master cluster")

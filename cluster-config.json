@@ -1,5 +1,5 @@
 {
-  "k3s_version": "v1.26.6+k3s1",
+  "k3s_version": "v1.30.11+k3s1",
   "ubuntu_version": "24.04",
   "nodes": {
     "master-node": {
@@ -9,12 +9,6 @@
       "disk": 20
     },
     "worker-node-1": {
-      "type": "worker",
-      "cpu": 2,
-      "memory": 2048,
-      "disk": 20
-    },
-    "worker-node-2": {
       "type": "worker",
       "cpu": 2,
       "memory": 2048,
