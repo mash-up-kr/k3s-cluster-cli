@@ -11,7 +11,7 @@ if [ ! -d ".venv" ]; then
 fi
 
 source .venv/bin/activate
-pip install -e .
+pip3 install -e .
 
 chmod +x kluster.py
 
