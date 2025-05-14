@@ -376,7 +376,8 @@ def run(args):
             insert_node_to_db(
                 cursor, node_name, node_type, cpu, memory, disk, node_config
             )
-
+        
+        connection.commit()
         # 지금 보니까 Go로 작성된 버전은 마스터노드 검사하는게 없었네...
         if master_node_count == 0:
             logger.error("Kubernetes cluster must have at least one master node")
